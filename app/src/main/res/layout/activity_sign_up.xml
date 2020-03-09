@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Activities.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/ic_background"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="REGISTERATION"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/registeration_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="15dp">
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+
+    <com.bikomobile.circleindicatorpager.CircleIndicatorPager
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        app:ci_drawable="@drawable/selected_dots"
+        app:ci_drawable_unselected="@drawable/default_dots"
+        app:ci_height="10dp"
+        app:ci_width="10dp" />
+
+
+</RelativeLayout>

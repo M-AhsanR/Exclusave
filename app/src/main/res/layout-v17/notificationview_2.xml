@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="2sp"
+    android:background="@drawable/round_corner_white_shape">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/img"
+            android:src="@color/black"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <LinearLayout
+            android:layout_marginStart="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/merchantName"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:gravity="center_vertical"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MERCHANT NAME"/>
+
+            <TextView
+                android:id="@+id/branch"
+                android:textColor="@color/dark_grey"
+                android:gravity="center_vertical"
+                style="@style/MiniText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branch"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:gravity="center_vertical"
+            style="@style/NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" This is an announcement"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textStyle="bold"
+            style="@style/NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dateofvisit"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/dateOfVisit"
+            android:gravity="center_vertical"
+            style="@style/NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 12.09.2019"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textStyle="bold"
+            style="@style/NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timeprefered"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/timePrefered"
+            android:gravity="center_vertical"
+            style="@style/NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 11:00 AM"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textStyle="bold"
+            style="@style/NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numberofguests"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/noOfGuests"
+            android:gravity="center_vertical"
+            style="@style/NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timeAndDate"
+            android:textColor="@color/dark_grey"
+            android:textStyle="bold"
+            style="@style/NormalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11:00 AM | 2.20.12"/>
+
+        <Button
+            android:id="@+id/approved_button"
+            android:layout_width="0sp"
+            android:layout_height="27dp"
+            android:layout_weight="1"
+            style="@style/BlackBtn"
+            android:background="@drawable/hollow_black_btn"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="10sp"
+            android:text="REJECT"
+            android:textColor="@color/black"
+            android:clickable="false"/>
+    </LinearLayout>
+
+</LinearLayout>

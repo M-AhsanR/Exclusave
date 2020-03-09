@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:padding="10dp"
+    android:background="@drawable/custom_dialog_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:textStyle="bold"
+            style="@style/HeadingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/congratulations"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/offerRedeemedSuccessfully"
+            style="@style/NormalText"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            style="@style/NormalText"
+            android:layout_height="wrap_content"
+            android:text="YOU EARNED 60 POINTS"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rateYourExperience"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            style="@style/HeadingText"
+            android:layout_marginTop="15dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="1"
+            android:isIndicator="false"
+            android:numStars="5"
+            style="?android:attr/rating"
+            android:rating="1"/>
+
+      <com.adroitandroid.chipcloud.ChipCloud
+          android:id="@+id/chipcloud"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:selectMode="single">
+      </com.adroitandroid.chipcloud.ChipCloud>
+
+        <EditText
+            android:id="@+id/comment"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textSize="12sp"
+            style="@style/GreyEditText"
+            android:layout_height="120dp"
+            android:hint="@string/writeComments"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:id="@+id/ratingDone"
+            style="@style/OrangeBtn"
+            android:layout_marginTop="20dp"
+            android:text="@string/done"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/skipRating"
+                android:layout_marginEnd="2.5dp"
+                android:layout_width="0dp"
+                style="@style/BlackBorderBtn"
+                android:layout_weight="1"
+                android:text="@string/skipForNow"/>
+            <Button
+                android:id="@+id/complain"
+                android:layout_marginStart="2.5dp"
+                android:layout_width="0dp"
+                style="@style/BlackBorderBtn"
+                android:layout_weight="1"
+                android:text="@string/complainInstead"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_white_shape"
+        android:padding="20dp"
+        android:id="@+id/closelinear">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/simple_profilepic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@color/light_grey"
+                android:layout_centerInParent="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/simple_customername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CUSTOMER NAME"
+                    android:textStyle="bold"
+                    style="@style/NormalText"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/simple_cardtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CARD TYPE"
+                    android:textSize="12sp"
+                    style="@style/NormalText"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/expandlistbtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_down_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/simple_time"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                style="@style/NormalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:00 AM | 2.20.12"/>
+
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/simple_totalbill"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                style="@style/NormalText"
+                android:text="TOTAL BILL 200.00 SAR"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/expended_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_white_shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:id="@+id/listitemviewtwo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/expanded_profilepic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@color/light_grey"
+                    android:layout_centerInParent="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/expanded_customername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CUSTOMER NAME"
+                        android:textStyle="bold"
+                        style="@style/NormalText"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/expanded_cardtype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CARD TYPE"
+                        style="@style/NormalText"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/closelistbtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_up_arrow"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Experiance"
+                        style="@style/NormalText"
+                        android:textColor="@color/black"/>
+
+                    <RatingBar
+                        android:id="@+id/expanded_ratings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:stepSize="0.1"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:rating="0"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/expanded_time"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    style="@style/MiniText"
+                    android:text="11:00AM| 12.2.19"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMMENT"
+                style="@style/NormalText"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/expanded_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOU WILL RECEIVEAN SMS WITH YOUR PASSWORD WITHIN 24 WORKING HOURS."
+                android:textColor="@color/black"
+                style="@style/MiniText"
+                android:layout_marginTop="5dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL BILL"
+                        style="@style/MiniText"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:id="@+id/expanded_totalbill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        style="@style/MiniText"
+                        android:text="200 SAR"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL SAVINGS"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        style="@style/MiniText"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:id="@+id/expanded_totalsavings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/MiniText"
+                        android:text="20.00 SAR"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/expanded_receipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="-5dp"
+                        android:src="@drawable/ic_receipt_icon" />
+
+                    <TextView
+                        android:layout_marginBottom="3dp"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:text="VIEW RECIPTE"
+                        android:textAlignment="center"
+                        style="@style/MiniText"
+                        android:textColor="@color/black"
+                        android:layout_gravity="bottom"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

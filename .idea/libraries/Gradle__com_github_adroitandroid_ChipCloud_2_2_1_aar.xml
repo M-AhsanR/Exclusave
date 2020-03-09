@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.adroitandroid:ChipCloud:2.2.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7196cf25653b08ab4218d93c02219bf7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7196cf25653b08ab4218d93c02219bf7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.adroitandroid/ChipCloud/2.2.1/905e10dd1b0926bb899da8db86cef9e824a878c2/ChipCloud-2.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

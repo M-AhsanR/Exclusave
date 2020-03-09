@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.exclusave">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        tools:replace="android:allowBackup"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.ReviewsActivity"></activity>
+        <activity android:name=".Activities.SearchMarchents" />
+        <activity android:name=".Activities.ContactUsActivity" />
+        <activity android:name=".Activities.Filters_Result_Activity" />
+        <activity android:name=".Activities.Store_Location_Activity" />
+        <activity android:name=".Activities.WebViewActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".Activities.AboutUsActivity" />
+        <activity android:name=".Activities.UpdateGenderActivity" />
+        <activity android:name=".Activities.UpdateCompanyActivity" />
+        <activity android:name=".Activities.UpdateInterestActivity" />
+        <activity android:name=".Activities.UpdatePhoneActivity" />
+        <activity android:name=".Activities.UpdateDOBActivity" />
+        <activity android:name=".Activities.UpdateNameActivity" />
+        <activity android:name=".Activities.ChatActivity" />
+        <activity android:name=".Activities.Branches_Activity" />
+        <activity android:name=".Activities.FavouritesActivity" />
+        <activity android:name=".Activities.ForgetPasswordActivity" />
+        <activity
+            android:name=".Activities.SignUpTesting"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.HistoryActivity" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:name=".Activities.RewardsActivity" />
+        <activity android:name=".Activities.MyProfileActivity" />
+        <activity android:name=".Activities.Details_Activity" />
+        <activity android:name=".Activities.Filters_Activity" />
+        <activity android:name=".Activities.Shopping_withoffers_Activity" />
+        <activity android:name=".Activities.Book_Now_Activity" />
+        <activity android:name=".Activities.ShoppingActivity" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Activities.SignUpActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Activities.MainActivity" />
+
+        <service android:name=".MyChatService" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD7ecoVhhrLl9_o9j4hgBpIZ9UtvonVITM" />
+    </application>
+
+</manifest>

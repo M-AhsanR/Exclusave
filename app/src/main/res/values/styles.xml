@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BlackBtn" parent="Widget.AppCompat.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/black_btn</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="OrangeBtn" parent="Widget.AppCompat.Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/orange_btn</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="GreyEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/dark_grey</item>
+        <item name="android:background">@drawable/grey_edittxt</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+
+    <style name="WeightedEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/dark_grey</item>
+        <item name="android:background">@drawable/grey_edittxt</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="BlackBorderBtn" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/black_border_btn</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_height">37dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="HeadingText" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="NormalText" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MiniText" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/light_grey</item>
+        <item name="colorControlActivated">@color/orange</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

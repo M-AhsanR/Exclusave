@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:padding="10dp"
+    android:background="@drawable/custom_dialog_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="18.5sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PLEASETAKEAMOMENTTOCOMPLETEYOURPROFILEWHILEWESETUPYOUROFFERS"
+            android:gravity="center_horizontal"
+            android:textSize="11sp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp">
+
+                        <RelativeLayout
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/completeprofilePic"
+                                android:layout_width="80dp"
+                                android:layout_height="match_parent"
+                                android:src="@color/light_grey"
+                                android:layout_centerInParent="true"/>
+
+                            <ImageView
+                                android:id="@+id/profilePicBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/cam_icon"/>
+                        </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/boothLinear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:maxLines="1"
+                            android:id="@+id/date_of_birth"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/dateOfBirth"
+                            android:editable="false"
+                            style="@style/GreyEditText"/>
+
+                        <AutoCompleteTextView
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/gender"
+                            style="@style/GreyEditText"
+                            android:hint="@string/gender"
+                            android:drawableEnd="@drawable/drop_down_black"
+                            android:editable="false" />
+
+                        <AutoCompleteTextView
+                            android:editable="false"
+                            android:id="@+id/interestType"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/interests"
+                            android:drawableEnd="@drawable/drop_down_black"
+                            style="@style/GreyEditText"/>
+
+
+                        <EditText
+                            android:maxLines="1"
+                            android:id="@+id/companyName"
+                            android:inputType="text"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/companyName"
+                            style="@style/GreyEditText"/>
+
+                        <EditText
+                            android:maxLines="1"
+                            android:id="@+id/position"
+                            android:inputType="textPersonName"
+                            android:layout_marginTop="10dp"
+                            android:hint="@string/position"
+                            style="@style/GreyEditText"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:elevation="2dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/skip_btn"
+                            style="@style/OrangeBtn"
+                            android:text="@string/skipForNow"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textAllCaps="false"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/black_border_btn"
+                            android:layout_marginBottom="5dp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:elevation="2dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/submitBtn"
+                            style="@style/OrangeBtn"
+                            android:layout_marginStart="10dp"
+                            android:text="@string/submit"
+                            android:textStyle="bold"
+                            android:textAllCaps="false"
+                            android:layout_marginBottom="5dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

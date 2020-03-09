@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/page2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/round_corner_white_shape"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/uploadID"
+                        style="@style/GreyEditText"
+                        android:drawableEnd="@drawable/attachment_icon"
+                        android:textAlignment="viewStart"
+                        android:hint="@string/uploadID"
+                        android:textSize="14sp"/>
+
+                    <LinearLayout
+                        android:background="@drawable/grey_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <EditText
+                            android:paddingStart="20dp"
+                            android:id="@+id/promoCode"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="@string/promoCode"
+                            android:textAlignment="viewStart"
+                            android:maxLines="1"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/dark_grey"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:textSize="14sp"
+                            android:paddingStart="20dp"
+                            android:background="@drawable/right_round_shape"
+                            android:paddingEnd="20dp"
+                            android:id="@+id/applyCode"
+                            style="@style/NormalText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/Apply"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/dark_grey" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/amount"
+                        style="@style/GreyEditText"
+                        android:layout_marginTop="10dp"
+                        android:hint="@string/amount"
+                        android:textAlignment="viewStart"
+                        android:maxLines="1" />
+
+                    <!--<EditText-->
+                    <!--android:maxLines="1"-->
+                    <!--android:inputType="textPassword"-->
+                    <!--android:id="@+id/password"-->
+                    <!--style="@style/GreyEditText"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:hint="@string/password" />-->
+
+                    <!--<EditText-->
+                    <!--android:maxLines="1"-->
+                    <!--android:inputType="textPassword"-->
+                    <!--android:id="@+id/confirmPassword"-->
+                    <!--style="@style/GreyEditText"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:hint="@string/confirmPassword" />-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <CheckBox
+                            android:gravity="center_vertical"
+                            android:id="@+id/checkBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:buttonTint="@color/black" />
+
+                        <TextView
+                            android:id="@+id/weblinks"
+                            android:gravity="center_vertical"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:textAlignment="viewStart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/ihaveReadAndAgreed"
+                            tools:ignore="RtlCompat"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/paymenttext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/payment"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:id="@+id/payment"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/payment" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

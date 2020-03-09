@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "691017780089",
+    "firebase_url": "https://exclusave-a442f.firebaseio.com",
+    "project_id": "exclusave-a442f",
+    "storage_bucket": "exclusave-a442f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691017780089:android:4f04059485711c56",
+        "android_client_info": {
+          "package_name": "com.exclusave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691017780089-ljmj4inpbsp6ul9571tkkc0252phthmk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH4lgFJ0CFmb6MeU4rOVUNL4vyfCXI4Rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691017780089-ljmj4inpbsp6ul9571tkkc0252phthmk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "691017780089-0rreqnfvidlh8edfkjjk8gi4lhnlsb0g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.exclusave",
+                "app_store_id": "1329933794"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

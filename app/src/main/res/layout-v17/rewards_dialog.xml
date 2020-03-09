@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="30dp"
+    android:padding="10dp"
+    android:background="@drawable/custom_dialog_background">
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/cancel_icon"
+        android:layout_gravity="end"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/custom_dialog_background">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/demo"
+            android:scaleType="centerCrop"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            android:layout_gravity="center"
+            android:numStars="1"
+            android:layout_marginTop="20dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:rating="2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wagamama"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="18.5sp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET 20% OFF NOW"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YOU WILL RECEIVEAN SMS WITH YOUR PASSWORD WITHIN 24 WORKING HOURS"
+            android:textAlignment="center"
+            style="@style/MiniText"
+            android:gravity="center_horizontal"
+            android:textColor="#aa222222"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+
+
+        <Button
+            android:id="@+id/code"
+            style="@style/OrangeBtn"
+            android:layout_marginTop="20dp"
+            android:text="CODE"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

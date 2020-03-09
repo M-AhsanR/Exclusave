@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:padding="10dp"
+    android:background="@drawable/custom_dialog_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/storeImg"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:riv_corner_radius="15dp"
+                android:scaleType="centerCrop"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:riv_corner_radius="12dp"
+                android:src="#99222222"
+                android:scaleType="centerCrop"/>
+
+            <LinearLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:id="@+id/storeName"
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store Name"/>
+                <TextView
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:id="@+id/companyName"
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CompanyName"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/red_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bringBefore"
+            style="@style/NormalText"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:id="@+id/billBefore"
+            android:hint="200.00 SAR"
+            android:textColorHint="@color/dark_grey"
+            android:layout_marginTop="10dp"
+            style="@style/GreyEditText"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/red_circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/billAfter"
+            style="@style/NormalText"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:id="@+id/billAfter"
+            android:hint="150.00 SAR"
+            android:textColorHint="@color/dark_grey"
+            android:layout_marginTop="10dp"
+            style="@style/GreyEditText"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10sp"
+            android:weightSum="1">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/totalSaved"
+                style="@style/NormalText"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/saved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="= 0 SAR"
+                android:textColor="@color/green"/>
+        </LinearLayout>
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uploadReceipt"
+            style="@style/NormalText"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:id="@+id/uploadid"
+            android:drawableEnd="@drawable/attachment_icon"
+            android:text="@string/upload"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="10dp"
+            style="@style/GreyEditText"/>
+
+
+        <Button
+            android:id="@+id/submitBill"
+            style="@style/OrangeBtn"
+            android:layout_marginTop="10dp"
+            android:text="@string/submit"/>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

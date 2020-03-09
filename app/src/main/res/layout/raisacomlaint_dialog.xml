@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:padding="10dp"
+    android:background="@drawable/custom_dialog_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                style="@style/HeadingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/riseAComplaint"/>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/complain_title"
+                style="@style/GreyEditText"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:hint="@string/selectstore1"
+                android:editable="false"/>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/city_selection"
+                style="@style/GreyEditText"
+                android:layout_marginTop="10dp"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:hint="@string/selectBranch1"
+                android:editable="false"/>
+
+
+            <com.adroitandroid.chipcloud.ChipCloud
+                android:id="@+id/complain_chipcloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:selectMode="single">
+            </com.adroitandroid.chipcloud.ChipCloud>
+
+
+            <EditText
+                android:gravity="start"
+                android:textAlignment="viewStart"
+                android:id="@+id/complain_comment"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                style="@style/GreyEditText"
+                android:layout_height="120dp"
+                android:hint="@string/writeComments"/>
+
+            <Button
+                android:id="@+id/complainsubmit"
+                style="@style/OrangeBtn"
+                android:layout_marginTop="20dp"
+                android:text="@string/submit"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

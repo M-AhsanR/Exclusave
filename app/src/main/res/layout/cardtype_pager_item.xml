@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/main_layout">
+
+    <RelativeLayout
+        android:id="@+id/select_card_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginEnd="190dp"
+        android:visibility="gone">
+        <View
+            android:id="@+id/outer_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/hollo_circle"/>
+
+        <View
+            android:id="@+id/inner_view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:background="@drawable/solid_circle"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cardImg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/demo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/selector_line"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/cardImg"
+        android:layout_centerHorizontal="true"
+        android:background="@color/dark_grey"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/cardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/NormalText"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/selector_line"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

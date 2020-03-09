@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_grey"
+    tools:context=".Activities.Filters_Activity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+    <TextView
+        android:id="@+id/clearAll"
+        android:gravity="center_vertical"
+        android:paddingEnd="20dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="@string/clearAll"
+        style="@style/HeadingText"
+        android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/filters"
+            style="@style/HeadingText"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/GreyEditText"
+            android:background="@drawable/round_corner_white_shape"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cities"
+                style="@style/HeadingText"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/cities_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:textColorHint="@color/dark_grey"
+                android:id="@+id/cities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                style="@style/NormalText"
+                android:background="@null"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:hint="@string/selectCities"/>
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_down_arrow"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/round_corner_white_shape"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/GreyEditText"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/categories"
+                style="@style/HeadingText"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:id="@+id/categories_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:textColorHint="@color/dark_grey"
+                    android:id="@+id/categories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:editable="false"
+                    android:background="@null"
+                    style="@style/NormalText"
+                    android:textColor="@color/black"
+                    android:hint="@string/selectCategories" />
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_down_arrow"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/round_corner_white_shape"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/GreyEditText"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subcategories"
+                style="@style/HeadingText"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+
+            <LinearLayout
+                android:id="@+id/subcategories_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:textColorHint="@color/dark_grey"
+                    android:id="@+id/subcategories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    style="@style/NormalText"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:hint="@string/select_sub_categories"/>
+
+                <View
+                    android:layout_width="0sp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_down_arrow"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sortBy"
+            style="@style/HeadingText"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/azBtn"
+                style="@style/BlackBtn"
+                android:text="@string/az"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selected_btn"/>
+
+            <Button
+                android:id="@+id/discountBtn"
+                style="@style/BlackBtn"
+                android:text="@string/discount"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/unselected_btn"/>
+
+            <Button
+                android:id="@+id/popularBtn"
+                style="@style/BlackBtn"
+                android:text="@string/popular"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/unselected_btn"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/applyFiltersBtn"
+            style="@style/BlackBtn"
+            android:text="@string/Apply"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/round_rectangle_8dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</LinearLayout>

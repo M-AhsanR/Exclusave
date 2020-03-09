@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/categoryTitle"
+            android:gravity="center_vertical"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            style="@style/HeadingText"
+            android:text="@string/contactUs"
+            android:paddingStart="40dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/callLinear"
+            android:backgroundTint="@color/light_grey"
+            android:background="@drawable/round_corner_white_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_blackphone"/>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    style="@style/HeadingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gotAQuickQuestion"/>
+
+                <TextView
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/giveUsACall"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chatLinear"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/light_grey"
+            android:background="@drawable/round_corner_white_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_messanger"/>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    android:textStyle="bold"
+                    style="@style/HeadingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gotAbriefSuggestionOrInquiry"/>
+
+                <TextView
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chatWithUs"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mailLinear"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/light_grey"
+            android:background="@drawable/round_corner_white_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_inbox"/>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    style="@style/HeadingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/forBusinessInquiries"/>
+
+                <TextView
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sendUsAnEmail"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="4"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/fbLinear"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:backgroundTint="@color/light_grey"
+                android:background="@drawable/round_corner_white_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <ImageView
+                    android:backgroundTint="@color/black"
+                    android:background="@drawable/facebook_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/instaLinear"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/light_grey"
+                android:background="@drawable/round_corner_white_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <ImageView
+                    android:backgroundTint="@color/black"
+                    android:background="@drawable/ic_instagram_logo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/twitterLinear"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/light_grey"
+                android:background="@drawable/round_corner_white_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <ImageView
+                    android:backgroundTint="@color/black"
+                    android:background="@drawable/twitter_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/webLinear"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/light_grey"
+                android:background="@drawable/round_corner_white_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <ImageView
+                    android:src="@drawable/web_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

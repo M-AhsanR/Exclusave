@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Book_Now_Activity">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:paddingStart="40dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/bookNow"
+        style="@style/HeadingText"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dateofvisit"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                style="@style/NormalText"/>
+
+            <TextView
+                android:id="@+id/date_of_visit"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                style="@style/GreyEditText"
+                android:hint="@string/select"
+                android:drawableEnd="@drawable/ic_booknow_icon"
+                android:drawableTint="@color/dark_grey"/>
+
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timeprefered"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                style="@style/NormalText" />
+
+            <TextView
+                android:id="@+id/time_prefered"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                style="@style/GreyEditText"
+                android:hint="@string/select"
+                android:drawableEnd="@drawable/ic_clock"
+                android:drawableTint="@color/dark_grey"/>
+
+            <TextView
+                android:textAllCaps="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/noOfGuests"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                style="@style/NormalText"/>
+
+            <EditText
+                android:id="@+id/noOfGuests"
+                android:maxLength="2"
+                android:inputType="number"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                style="@style/GreyEditText"
+                android:hint="0"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:drawableTint="@color/dark_grey"/>
+
+            <TextView
+                android:textAllCaps="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/specialRequest"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                style="@style/NormalText"/>
+
+            <EditText
+                android:id="@+id/specialRequest"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="140dp"
+                style="@style/GreyEditText"
+                android:gravity="start"
+                android:hint="" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/send_req"
+            style="@style/OrangeBtn"
+            android:textStyle="bold"
+            android:text="@string/sendRequest"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_rectangle_8dp"
+    android:elevation="2dp"
+    android:layout_marginTop="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/whatsnewbackgroundcover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:riv_corner_radius="8dp"
+        android:src="@drawable/shopping"
+        android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bottom_curved_shape"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp">
+
+            <ImageView
+                android:id="@+id/whatsnewicon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/temp_icon_2"/>
+
+            <TextView
+                android:id="@+id/whatsnewtitle"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="WAGAMA"
+                style="@style/HeadingText"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/black_circle_icon"/>
+
+            <com.like.LikeButton
+                android:layout_centerInParent="true"
+                android:id="@+id/favBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:anim_scale_factor="2"
+                app:icon_size="20dp"
+                app:icon_type="heart"
+                app:is_enabled="true"
+                app:like_drawable="@drawable/ic_heart_new_orange"
+                app:unlike_drawable="@drawable/ic_heart_new" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

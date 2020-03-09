@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/mymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:textDirection="locale"
+        android:padding="10dp"
+        android:visibility="visible"
+        android:text="Hello, can anyone help me!"
+        android:layout_gravity="end"
+        android:background="@drawable/my_message_shape"
+        android:backgroundTint="@color/light_grey"
+        android:minWidth="100dp"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/sentImg"
+        android:layout_gravity="end"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:riv_corner_radius="8dp"
+        android:src="@color/yellow"/>
+
+    <TextView
+        android:padding="10dp"
+        android:textDirection="rtl"
+        android:textAlignment="viewEnd"
+        android:layout_marginTop="15dp"
+        android:id="@+id/othersmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:visibility="visible"
+        android:background="@drawable/others_message_shape"
+        android:backgroundTint="@color/dark_grey"
+        android:minWidth="100dp"
+        android:text="Hello Sir, I am hassan at your service"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/recievedImg"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:riv_corner_radius="8dp"
+        android:src="@color/yellow"/>
+
+</LinearLayout>

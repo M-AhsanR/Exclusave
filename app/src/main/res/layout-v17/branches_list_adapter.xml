@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_corner_white_shape"
+    android:elevation="2sp"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WAGAMAMA ELTAHLIA"
+                android:textStyle="bold"
+                style="@style/NormalText"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:gravity="bottom"
+                android:id="@+id/store_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JEDDAH, ELTAHLIA ST."
+                style="@style/NormalText"
+                android:ellipsize="end"
+                android:maxWidth="170dp"
+                android:maxLines="2"
+                android:layout_weight="0.5"
+                android:textAlignment="viewStart"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/location"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/black_circle_icon"/>
+
+                <ImageView
+                    android:id="@+id/loc_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/location_icon"
+                    android:backgroundTint="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/callstore"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/black_circle_icon"/>
+
+                <ImageView
+                    android:id="@+id/heart_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/call_icon"
+                    android:backgroundTint="@color/white"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

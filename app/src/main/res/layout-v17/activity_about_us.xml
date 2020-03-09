@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+    <TextView
+        android:textAllCaps="true"
+        android:id="@+id/categoryTitle"
+        android:gravity="center_vertical"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        style="@style/HeadingText"
+        android:text="@string/aboutUs"
+        android:paddingStart="40dp"
+        android:textStyle="bold"/>
+    </LinearLayout>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:background="@drawable/ic_header_cover"
+                android:id="@+id/player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="8dp">
+            </com.google.android.youtube.player.YouTubePlayerView>
+
+            <ImageView
+                android:id="@+id/playVideo"
+                android:layout_centerInParent="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/play_btn"/>
+
+        </RelativeLayout>
+
+
+        <!--   <RelativeLayout
+               android:padding="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="220dp">
+               <com.makeramen.roundedimageview.RoundedImageView
+                   android:scaleType="centerCrop"
+                   android:src="@color/light_grey"
+                   android:layout_width="match_parent"
+                   android:layout_height="220dp"
+                   app:riv_corner_radius="15dp"/>
+
+               <ImageView
+                   android:id="@+id/playVideo"
+                   android:layout_centerInParent="true"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/play_btn"/>
+           </RelativeLayout>-->
+
+        <LinearLayout
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Founded in 2013, as part of Altaswouq Alamen Est., Exclusave knew right away where it wanted to go and how to get there. A youthful, dynamic and intelligent team was assembled and given a task: to become Saudi Arabia's #1 discount card. Established in Jeddah, the commercial capital of Saudi Arabia, Exclusave has a vision to increase public awareness about positive financial habits. Starting by high school, diploma, university, post-graduate students and employees from medium to large corporate. Exclusave will help improve their spending and promote the smart saving methodology in a trendy fashion.
+
+Exclusave Card has blazed a trail across the nation, signing up tens of businesses in its first year. Our team is keen to get discounts from the most desired brands and places covering everything our customer may need. Exclusave Card discounts and offers are growing month by month, providing extra value to our cardholders at no extra cost! Our customers' reaction to this card has been absolutely overwhelming for the team and as a result we're always busy in continuous search of new and exciting trends.
+We differentiate ourselves by many features such as: the quality, the variety, and the geographic distribution of the places in which the card is recognized. We also proud ourselves by having direct access to the biggest schools, universities and companies in Saudi Arabia."/>
+
+            <TextView
+                android:id="@+id/faqs"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/faqs_icon"
+                android:textStyle="bold"
+                style="@style/HeadingText"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/frequentlyAskedQuestions"/>
+
+            <TextView
+                android:id="@+id/terms"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/terms_cond_icon"
+                android:textStyle="bold"
+                style="@style/HeadingText"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termsAndConditions"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

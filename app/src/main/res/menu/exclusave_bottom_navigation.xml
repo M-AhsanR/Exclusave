@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_menu"
+        android:title=""
+        android:icon="@drawable/ic_home_menu"/>
+    <item android:id="@+id/bottom_profile"
+        android:title=""
+        android:icon="@drawable/ic_group" />
+    <item android:id="@+id/bottom_centreBtn"
+        android:title=""
+        android:icon="@drawable/ic_bottomnav_center_logo"/>
+    <item android:id="@+id/bottom_location"
+        android:title=""
+        android:icon="@drawable/ic_bottomlocation" />
+   <item android:id="@+id/bottom_bell"
+        android:title=""
+        android:icon="@drawable/ic_bell"/>
+</menu>

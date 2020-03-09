@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UpdateNameActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:paddingStart="40dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        style="@style/HeadingText"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heading"
+                android:textStyle="bold"
+                style="@style/HeadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/updateYourPhoneNumber"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layoutDirection="ltr"
+                android:textDirection="ltr"
+                style="@style/GreyEditText"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:elevation="2sp"
+                    android:background="@drawable/sa_flag"/>
+
+                <EditText
+                    android:layoutDirection="ltr"
+                    android:textDirection="ltr"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/grey_edittxt"
+                    android:imeOptions="actionDone"
+                    android:maxLength="13"
+                    android:digits="+0123456789"
+                    android:maxLines="1"
+                    android:id="@+id/phone"
+                    android:paddingStart="10dp"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/dark_grey"
+                    android:hint="+966 XXXXXXXX" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/update"
+            style="@style/OrangeBtn"
+            android:layout_alignParentBottom="true"
+            android:text="@string/Update"/>
+    </RelativeLayout>
+
+</LinearLayout>

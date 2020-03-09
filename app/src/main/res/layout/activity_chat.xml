@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ee222222"
+    tools:context=".Activities.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/watermark_svg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chatrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="190dp"/>
+
+            <TextView
+                android:id="@+id/typing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chatrecycler"
+                android:layout_marginTop="15dp"
+                android:text="TYPING..."
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/round_corner_darkwhite_shape"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/message_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="@drawable/round_corner_white_shape"
+                    android:gravity="start"
+                    android:hint="@string/typeAMessage"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/attachment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/attachment_icon" />
+
+                    <View
+                        android:layout_width="0sp"
+                        android:layout_height="10dp"
+                        android:layout_weight="3" />
+
+                    <Button
+                        android:id="@+id/sendbutton"
+                        android:layout_width="110dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:background="@drawable/round_corner_darkwhite_shape"
+                        android:backgroundTint="@color/dark_grey"
+                        android:text="@string/send"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
